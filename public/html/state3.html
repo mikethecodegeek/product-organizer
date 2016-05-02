@@ -1,0 +1,19 @@
+<h1>Details</h1>
+
+<h2>{{detailsName}}</h2>
+<div>Price: {{detailsPrice}}</div>
+<div>
+    <img ng-src="{{detailsImage}}">
+</div>
+<td><button ui-sref='delete({id:detailsId})'>Delete</button></td>
+<td><button ng-click = 'editItem(items)'>Edit Item</button></td>
+
+<div ng-show="editing">
+    <input type="text" ng-model="newName">
+    <input type="text" ng-model="newDescription">
+    <input type="text" ng-model="newPrice">
+    <input type="text" ng-model="newCategory">
+    <input type="text" ng-model="newImage">
+
+    <button ng-click="postEdit()">Confirm Edit</button>
+</div>

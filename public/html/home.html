@@ -1,0 +1,20 @@
+
+<table class="table">
+    <tr>
+        <th ng-click="changeFilter('items.name')">Name</th>
+        <th ng-click="changeFilter('items.description')">Description</th>
+        <th ng-click="changeFilter('items.price')">Price</th>
+        <td ng-click="changeFilter('items.category')">Category</td>
+    </tr>
+    <tr ng-repeat = 'items in apiData.data'>
+        <td>{{items.name}}</td>
+        <td>{{items.description}}</td>
+        <td>{{items.price}}</td>
+        <td>{{items.category}}</td>
+        <td> <button ui-sref ='details({id: items.id, image: items.image})'>Go To Details</button></td>
+
+    </tr>
+</table>
+
+
+</div>

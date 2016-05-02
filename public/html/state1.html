@@ -1,0 +1,15 @@
+<h2>Add an Item</h2>
+<p>Name</p>
+<input type="text" ng-model="newName" placeholder="Name of item">
+<p>Description</p>
+<input type="text" ng-model="newDescription" placeholder="Item description">>
+<p>Price</p>
+<input type="number" min = '1' max = '9999' ng-model="newPrice">
+<p>Category</p>
+<input type="text" ng-model="newCategory" placeholder="Category">>
+<p>Image Url</p>
+<input type="text" ng-model="newImage" placeholder="Image URL">>
+
+<div>
+    <button ng-click="newPost(newData)">Add to Inventory</button>
+</div>
